@@ -1,0 +1,245 @@
+// Dropzone.autoDiscover = false;
+    // var submit = $("#submit");
+    
+//     Dropzone.options.uploadForm= 
+//     {
+//         paramName: "file",
+//         url:"<?php echo base_url();?>file/upload",
+//         maxFilesize:1000,
+//         autoDiscover:false,
+//         autoProcessQueue:false,
+//         addRemoveLinks:true,
+//         uploadMultiple:true,
+//         maxFiles:500,
+//         parallelUploads:1000,
+//         webkitdirectory: true,
+//         dictRemoveFileConfirmation: "Are you sure you want to delete this?",
+//         acceptedFiles: ".jpeg,.jpg,.png,.gif,.dir,.csv,.txt",
+
+//         init: function()
+//         {
+//             var dropZone = this;
+//             var submit = $('#submit');
+//             this.hiddenFileInput.setAttribute("webkitdirectory", true);
+//             // this.hiddenFileInput = document.createElement("input");
+//             // this.hiddenFileInput.setAttribute("type", "file");
+//             // this.hiddenFileInput.setAttribute("webkitdirectory", false);
+
+//             // alert(this);
+//             // console.log(this.attr('file'));
+//             // $(this).css('background-color','red');
+//             // ($("uploadForm").find('input').attr('webkitdirectory','true'));
+            
+//             // var count = $(this).find('input[type="file"]');
+//             // if(count.length>0)
+//             // {
+//             //     alert('1');
+//             // }
+//             // else
+//             // {
+//             //     alert('0');
+//             // }
+//             // this.hiddenFileInput = document.createElement("input");
+//             // this.hiddenFileInput.setAttribute("type", "file");
+//             // this.hiddenFileInput.setAttribute("webkitdirectory", true);
+//             // $('#file').attr('webkitdirectory','true');
+//             // submit.on('click',function()
+//             // {
+//             //     // console.log(typeof(obj));
+//             //     // return false;
+                
+//             //     dropZone.processQueue();
+//             //     // console.log('processed');
+//             // });
+//             submit.on("click", function(e) 
+//             {
+//                     // Make sure that the form isn't actually being sent.
+//                 e.preventDefault();
+//                 // e.stopPropagation();
+//                 dropZone.processQueue();
+//             });
+//             this.on('addedfile',function(file)
+//             {
+//                 // this.enqueueFile(file);
+//                 console.log('file added successfully');
+//                 // console.log(dropZone.files);
+//                 // return false;
+    
+//             });
+//             // this.on('sending')
+//             this.on('removedfile',function(file)
+//             {
+//                 // this.dequeueFile(file);
+//                 alert('file removed successfully');
+//             });
+//             this.on('sending',function(file,chr,formData)
+//             {
+//                     console.log('sending');
+                    
+//             });
+            
+//             this.on('complete', function () 
+//             {
+//                 console.log('process completed');
+//             });
+//             this.on("successmultiple", function(files, response) 
+//             {
+//                 console.log('success sending')
+//                 console.log(response);
+//                 // if (response == 'success') 
+//                 // {
+
+//                 //     swal({
+//                 //     title: "Added attachment!",
+//                 //     text: "attachment Added Update Successfully",
+//                 //     icon: "success",
+//                 //     button: "Ok!",
+//                 //     }).then((value) => {
+//                 //     window.location = url + 'welcome/login';
+//                 //     });
+//                 // }
+//             });
+
+//             // submit.on('click',function(event)
+//             // {
+//             //     // typeof
+//             //    obj.processQueue();
+//             // })
+
+//             // this.on("addedfile", function(file) 
+//             // {
+//             //     file.previewElement.addEventListener("click", function() 
+//             //     {
+//             //             this.removeFile(file);
+//             //     });
+//             // });
+//         }
+
+//     }
+
+
+//     // $("#files").on('change',function(event)
+//     //     {
+            
+//     //         let files  = event.target.files;
+//     //         for(let i=0;i<files.length;i++)
+//     //         {
+//     //             console.log((files[i].webkitRelativePath));
+//     //         }
+//     //         return false;
+//     //     });
+
+//     // function filesUploaded(obj)
+//     // {
+//     //  $.ajax
+//     //     ({
+//     //         method:'post',
+//     //         url:"<?php echo base_url();?>file/upload",
+//     //         data:form,
+//     //         cache:false,
+//     //         contentType:false,
+//     //         processData:false,
+//     //         success:function(result)
+//     //         {
+//     //             alert(result);
+//     //             return false;
+//     //         },
+//     //         error:function(result)
+//     //         {
+//     //             alert(result);
+//     //             return false;
+//     //         }
+//     //     })
+
+
+<div class="navbar_menu">
+                    
+                    <div class="x">
+                    <div class="nav_menu">
+                            <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+                        <nav class="nav navbar-nav">
+                            <ul class=" navbar-right">
+                                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <!-- <img src="images/img.jpg" alt="">John Doe -->
+                                    jOHN dOE</a>
+                                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <span class="badge bg-red pull-right">50%</span>
+                                            <span>Settings</span>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">Help</a>
+                                        <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                    </div>
+                                </li>
+                                <!-- <li role="presentation" class="nav-item dropdown open">
+                                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <span class="badge bg-green">6</span>
+                                    </a>
+                                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                                        <li class="nav-item">
+                                            <a class="dropdown-item">
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item">
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item">
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item">
+                                                <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                                <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <div class="text-center">
+                                                <a class="dropdown-item">
+                                                    <strong>See All Alerts</strong>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        </div>
+                    </div>
